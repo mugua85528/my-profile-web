@@ -7,28 +7,28 @@ function Home({ setCurrentPage }) {
   const [moreNode, setMoreNode] = useState(false);
   const [moreWebpack, setMoreWebpack] = useState(false);
   const HCJHandler = () => {
-    if (moreHCJ == false) {
+    if (moreHCJ === false) {
       setMoreHCJ(true);
     } else {
       setMoreHCJ(false);
     }
   };
   const ReactHandler = () => {
-    if (moreReact == false) {
+    if (moreReact === false) {
       setMoreReact(true);
     } else {
       setMoreReact(false);
     }
   };
   const NodeHandler = () => {
-    if (moreNode == false) {
+    if (moreNode === false) {
       setMoreNode(true);
     } else {
       setMoreNode(false);
     }
   };
   const WebpackHandler = () => {
-    if (moreWebpack == false) {
+    if (moreWebpack === false) {
       setMoreWebpack(true);
     } else {
       setMoreWebpack(false);
@@ -123,27 +123,42 @@ function Home({ setCurrentPage }) {
                 :
               </p>
               <p>
-                <Link to="https://sideproject-reverseweb.onrender.com">
+                <Link
+                  to="https://sideproject-reverseweb.onrender.com"
+                  target="_blank"
+                >
                   用戶端預約頁面
                 </Link>
-                <Link to="https://github.com/mugua85528/reverse-web-client.git">
+                <Link
+                  to="https://github.com/mugua85528/reverse-web-client.git"
+                  target="_blank"
+                >
                   GitHub-client
                 </Link>
                 <br />
                 一般用戶可以在這個頁面瞭解商家資訊，並選擇服務、預約時間及填寫資料立即向商家預約。同時也可以利用手機號碼查詢已預約的服務
               </p>
               <p>
-                <Link to="https://sideproject-reverseweb-business.onrender.com">
+                <Link
+                  to="https://sideproject-reverseweb-business.onrender.com"
+                  target="_blank"
+                >
                   商家後台頁面
                 </Link>
-                <Link to="https://github.com/mugua85528/reverse-web-business.git">
+                <Link
+                  to="https://github.com/mugua85528/reverse-web-business.git"
+                  target="_blank"
+                >
                   GitHub-business
                 </Link>
                 <br />
                 商家可以在這個頁面註冊會員並登入設定商家資訊，營業時間會同步顯示用戶頁面可預約的時間。此頁面也會顯示即將到來的預約服務並包含用戶所提供的所有訊息
               </p>
               <p>
-                <Link to="https://github.com/mugua85528/reverse-web-server.git">
+                <Link
+                  to="https://github.com/mugua85528/reverse-web-server.git"
+                  target="_blank"
+                >
                   GitHub-server
                 </Link>
                 <br />
@@ -158,21 +173,21 @@ function Home({ setCurrentPage }) {
             <hr />
             <div onClick={HCJHandler} className="part H-C-J">
               <p>HTML CSS JAVASCRIPT</p>
-              <p className={moreHCJ == true ? "note" : "hiden"}>
+              <p className={moreHCJ === true ? "note" : "hiden"}>
                 理解如何優化SEO及DOM、設計RWD並熟悉JS，能完成各種網站設計
               </p>
             </div>
             <hr />
             <div onClick={ReactHandler} className="part React">
               <p>React</p>
-              <p className={moreReact == true ? "note" : "hiden"}>
+              <p className={moreReact === true ? "note" : "hiden"}>
                 能夠搭配React Hook及Webpack完整做出Single Page App
               </p>
             </div>
             <hr />
             <div onClick={NodeHandler} className="part Node.js">
               <p>Node.js</p>
-              <p className={moreNode == true ? "note" : "hiden"}>
+              <p className={moreNode === true ? "note" : "hiden"}>
                 能夠使用Express製作基本伺服器、搭配Mongodb製作Models並使用RESTful
                 API架構設計出基本的CRUD處理前端的請求
               </p>
@@ -180,7 +195,7 @@ function Home({ setCurrentPage }) {
             <hr />
             <div onClick={WebpackHandler} className="part Webpack">
               <p>Webpack</p>
-              <p className={moreWebpack == true ? "note" : "hiden"}>
+              <p className={moreWebpack === true ? "note" : "hiden"}>
                 目前熟悉使用axios、date fns、react router
                 dom、bcrypt、joi的npm，往後也會積極學習其他Webpack及library
               </p>
