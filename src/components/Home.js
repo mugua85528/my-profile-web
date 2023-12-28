@@ -194,10 +194,10 @@ function Home({ setCurrentPage }) {
             </div>
             <hr />
             <div onClick={WebpackHandler} className="part Webpack">
-              <p>Webpack</p>
+              <p>Package</p>
               <p className={moreWebpack === true ? "note" : "hiden"}>
                 目前熟悉使用axios、date fns、react router
-                dom、bcrypt、joi的npm，往後也會積極學習其他Webpack及library
+                dom、bcrypt、joi的npm，往後也會積極學習其他Package及library
               </p>
             </div>
             <hr />
