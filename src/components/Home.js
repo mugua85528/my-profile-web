@@ -172,7 +172,7 @@ function Home({ setCurrentPage }) {
           <div className="skill">
             <hr />
             <div onClick={HCJHandler} className="part H-C-J">
-              <p>HTML CSS JAVASCRIPT</p>
+              <p>HTML CSS JAVASCRIPT TYPESCRIPT</p>
               <p className={moreHCJ === true ? "note" : "hiden"}>
                 理解如何優化SEO及DOM、設計RWD並熟悉JS，能完成各種網站設計
               </p>
@@ -181,7 +181,7 @@ function Home({ setCurrentPage }) {
             <div onClick={ReactHandler} className="part React">
               <p>React</p>
               <p className={moreReact === true ? "note" : "hiden"}>
-                能夠搭配React Hook及Webpack完整做出Single Page App
+                能夠搭配React Hook及NPM Package完整做出Single Page App
               </p>
             </div>
             <hr />
@@ -204,7 +204,7 @@ function Home({ setCurrentPage }) {
           </div>
           <div className="next">
             <p>持續學習 : TypeScript、Node.js、Next.js</p>
-            <p>未來會走向Full-stack 全端工程師</p>
+            <p>未來會持續走向Full-stack 全端工程師</p>
           </div>
         </section>
       </main>
