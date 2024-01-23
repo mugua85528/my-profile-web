@@ -130,7 +130,7 @@ function Home({ setCurrentPage }) {
                   用戶端預約頁面
                 </Link>
                 <Link
-                  to="https://github.com/mugua85528/reverse-web-client.git"
+                  to="https://github.com/mugua85528/reserve-web-client-tsx.git"
                   target="_blank"
                 >
                   GitHub-client
@@ -146,7 +146,7 @@ function Home({ setCurrentPage }) {
                   商家後台頁面
                 </Link>
                 <Link
-                  to="https://github.com/mugua85528/reverse-web-business.git"
+                  to="https://github.com/mugua85528/reserve-web-business-tsx.git"
                   target="_blank"
                 >
                   GitHub-business
